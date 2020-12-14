@@ -112,7 +112,8 @@
 	.pf-li{
 		width: 50%;
 	}
-	.pf-li-site{
+	.pf-li-site-1,
+	.pf-li-site-2{
 		background: #b0e0bc;
 		width: 100%;
 		position: relative;
@@ -126,10 +127,13 @@
 		width: 80%;
 		margin: 0 auto;
 	}
-	.site-desc-container{
+	.site-desc-1-container,
+	.site-desc-2-container{
 		display: none;
 	}
-	.pf-li-site .gallery-overlay{
+	.pf-li-site-1 .gallery-overlay,
+	.pf-li-site-2 .gallery-overlay
+		{
 		position: absolute;
 		left: 0;
 		top: 0;
@@ -146,7 +150,9 @@
 		justify-content: center;
 		align-items: center;
 	}
-	.pf-li-site a:hover > .gallery-overlay{
+	.pf-li-site-1 a:hover > .gallery-overlay,
+	.pf-li-site-2 a:hover > .gallery-overlay
+	{
 		opacity: 1;
 		-webkit-transform: scale(1);
 		transform: scale(1);
@@ -244,7 +250,7 @@
 	.menu-ul li a {
 		padding: 0px
 	}
-	.site-desc-container{
+	.site-desc-1-container{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -257,7 +263,7 @@
 		width: 45%;
 		text-align: right;
 	}
-	/* .site-desc-container h3{
+	/* .site-desc-1-container h3{
 		font-size: 2vw;
 		padding-bottom: 30px;
 	} */
@@ -302,19 +308,20 @@
 	color: #000;
 	letter-spacing: 2px;
   }
-  	.site-desc-main{
+  	.psite-desc-1-main-1{
 		  padding-top: 30px;
 	  }
-	.site-desc-container .site-desc{
+	.site-desc-1-container .site-desc-1{
 		font-size: 1.5vw;
 	}
-	.site-desc-container .site-desc p{
+	.site-desc-1-container .site-desc-1 p{
 		padding: 5px 0px;
 	}
-	.pf-li-site .gallery-overlay{
+	.pf-li-site-1 .gallery-overlay,
+	.pf-li-site-2 .gallery-overlay{
 		display: none;
 	}
-	.pf-li-site{
+	.pf-li-site-1{
 		position: relative;
 		display: block;
 		float: left;
@@ -330,19 +337,19 @@
 		padding: 150px 0;
 		margin: 0;
 	}
-	.site-desc-main{
+	.psite-desc-1-main-1{
 		display: flex;
 	}
-	.site-desc{
+	.site-desc-1{
 		flex-basis: 70%;
 	}
-	.site-desc-tags{
+	.site-desc-1-tags{
 		flex-basis: 30%;
 		text-align: left;
 		position: relative;
 		left: 50px;
 	}
-	.site-desc-tags p{
+	.site-desc-1-tags p{
 		padding: 2% 0%;
 		display: flex;
 	}
@@ -398,20 +405,20 @@
 	.contact-email{
 		font-size: 1.3em;
 	}
-	.site-desc-container .site-desc{
+	.site-desc-1-container .site-desc-1{
 		font-size: 1.3vw;
 	}
-	.site-desc-container h3{
+	.site-desc-1-container h3{
 		padding-bottom: 50px;
 	}
 	.pf-site-img
 	{
 		left: 50px;
 	}
-	.site-desc-container{
+	.site-desc-1-container{
 		right: 50px;
 	}
-	.site-desc-main{
+	.psite-desc-1-main-1{
 		padding-top: 100px;
 	}
 }
@@ -443,16 +450,16 @@
 	{
 		left: 100px;
 	}
-	.site-desc-container{
+	.site-desc-1-container{
 		right: 100px;
 	}
-	.site-desc-container .site-desc{
+	.site-desc-1-container .site-desc-1{
 		font-size: 1vw;
 	}
-	.site-desc-tags p {
+	.site-desc-1-tags p {
 		padding: 2% 0%;
 	}
-	.site-desc-tags{
+	.site-desc-1-tags{
 		font-size: .7vw;
 	}
 }
