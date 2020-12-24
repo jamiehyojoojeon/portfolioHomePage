@@ -131,6 +131,15 @@
 	.site-desc-2-container{
 		display: none;
 	}
+
+	.site-desc-2-container h2{
+		font-family: 'Karla', sans-serif;
+		font-size: 2.5vw;
+		font-weight: 800;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		text-align: center;
+	}
 	.pf-li-site-1 .gallery-overlay,
 	.pf-li-site-2 .gallery-overlay
 		{
@@ -250,19 +259,27 @@
 	.menu-ul li a {
 		padding: 0px
 	}
-	.site-desc-1-container{
+	.site-desc-1-container,
+	.site-desc-2-container{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		position: absolute;
 		top: 0;
-		right: 30px;
 		bottom: 0;
 		color: #000;
 		font-family: 'Roboto Slab', serif;
-		width: 45%;
-		text-align: right;
 	}
+	.site-desc-1-container{
+		text-align: right;
+		right: 30px;
+		width: 45%;
+	}
+	.site-desc-2-container{
+		text-align: right;
+		width: 50%;
+	}
+	
 	/* .site-desc-1-container h3{
 		font-size: 2vw;
 		padding-bottom: 30px;
@@ -271,13 +288,13 @@
 	/* Animated title */
 	.animated-title {
 	color: #222;
-    font-family: Roboto, Arial, sans-serif;
-    height: 40vmin;
+    font-family: 'Karla', sans-serif;
+    height: 240px;
     left: 80%;
     position: absolute;
-    top: 35%;
     transform: translate(-50%, -50%);
-    width: 100%;
+	width: 100%;
+	text-transform: uppercase;
   }
   .animated-title > div {
 	height: 50%;
@@ -286,14 +303,15 @@
 	width: 100%;
   }
   .animated-title > div div {
-	font-size: 3vw;
+	font-size: 2.5vw;
+	font-weight: 800;
 	position: absolute;
   }
   .animated-title > div div span {
 	display: block;
   }
   .animated-title > div.text-top div {
-	animation: showTopText 1s;
+	animation: showTopText 1s ease-in-out;
 	animation-delay: 0.5s;
 	animation-fill-mode: forwards;
 	bottom: 0;
@@ -308,13 +326,16 @@
 	color: #000;
 	letter-spacing: 2px;
   }
-  	.psite-desc-1-main-1{
+  	.psite-desc-1-main-1,
+  	.psite-desc-2-main-2{
 		  padding-top: 30px;
 	  }
-	.site-desc-1-container .site-desc-1{
+	.site-desc-1-container .site-desc-1,
+	.site-desc-2-container .site-desc-2{
 		font-size: 1.5vw;
 	}
-	.site-desc-1-container .site-desc-1 p{
+	.site-desc-1-container .site-desc-1 p,
+	.site-desc-2-container .site-desc-2 p{
 		padding: 5px 0px;
 	}
 	.pf-li-site-1 .gallery-overlay,
@@ -337,19 +358,31 @@
 		padding: 150px 0;
 		margin: 0;
 	}
-	.psite-desc-1-main-1{
+	.pf-site-2-img{
+		width: 33%;
+		padding: 120px 0px;
+		left: 25%;
+		position: relative;
+	}
+	.psite-desc-1-main-1,
+	.psite-desc-2-main-2{
 		display: flex;
 	}
-	.site-desc-1{
+	.site-desc-1,
+	.site-desc-2
+	{
 		flex-basis: 70%;
 	}
-	.site-desc-1-tags{
+	.site-desc-1-tags,
+	.site-desc-2-tags
+	{
 		flex-basis: 30%;
 		text-align: left;
 		position: relative;
 		left: 50px;
 	}
-	.site-desc-1-tags p{
+	.site-desc-1-tags p,
+	.site-desc-2-tags p{
 		padding: 2% 0%;
 		display: flex;
 	}
@@ -405,7 +438,8 @@
 	.contact-email{
 		font-size: 1.3em;
 	}
-	.site-desc-1-container .site-desc-1{
+	.site-desc-1-container .site-desc-1,
+	.site-desc-2-container .site-desc-2{
 		font-size: 1.3vw;
 	}
 	.site-desc-1-container h3{
@@ -418,8 +452,13 @@
 	.site-desc-1-container{
 		right: 50px;
 	}
-	.psite-desc-1-main-1{
+	.psite-desc-1-main-1,
+	.psite-desc-2-main-2{
 		padding-top: 100px;
+	}
+	.pf-site-2-img{
+		width: 27%;
+
 	}
 }
 
@@ -453,13 +492,15 @@
 	.site-desc-1-container{
 		right: 100px;
 	}
-	.site-desc-1-container .site-desc-1{
+	.site-desc-1-container .site-desc-1,
+	.site-desc-2-container .site-desc-2{
 		font-size: 1vw;
 	}
 	.site-desc-1-tags p {
 		padding: 2% 0%;
 	}
-	.site-desc-1-tags{
+	.site-desc-1-tags,
+	.site-desc-2-tags{
 		font-size: .7vw;
 	}
 }
